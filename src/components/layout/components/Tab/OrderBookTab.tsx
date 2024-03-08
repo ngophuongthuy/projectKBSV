@@ -6,13 +6,12 @@ export function OrderBookTab() {
   const tabsData = [
     {
       label: "Sổ lệnh thường",
-      content:<OrderBookLayout/>,
+      content: <OrderBookLayout />
     },
     {
       label: "Quản lý mua định kỳ",
-      content:
-        "Ngô Phương Thủy haha hihi hoho",
-    },
+      content: "Ngô Phương Thủy haha hihi hoho"
+    }
   ];
   return (
     <div className="w-full  ">
@@ -23,21 +22,19 @@ export function OrderBookTab() {
               key={idx}
               className={`py-3 border-b-4  transition-colors duration-300 text-text_tab hover:text-color_yellow hover:border-color_yellow rounded-t-lg  px-3 ${
                 idx === activeTabIndex
-                  ? "border-color_yellow"
+                  ? "border-color_yellow bg-gradient-to-t from-yellow-950"
                   : "border-transparent " //sử dụng để định nghĩa một đường viền có màu trong suốt
               }`}
-              onClick={() => setActiveTabIndex(idx)}>
+              onClick={() => setActiveTabIndex(idx)}
+            >
               {tab.label}
             </button>
           );
         })}
-        
       </div>
-      <div >
+      <div>
         <>{tabsData[activeTabIndex].content}</>
       </div>
-    
     </div>
   );
 }
-
