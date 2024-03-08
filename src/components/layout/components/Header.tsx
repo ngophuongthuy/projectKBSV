@@ -5,8 +5,6 @@ import { storeCommonChangeTheme } from "@store/slices/commonSlice";
 import { ICommon } from "@types";
 import { useTranslation } from "react-i18next";
 
-
-
 const optionsTheme: ICommon.IOption[] = LIST_THEME.map((eTheme) => {
   return { id: eTheme.id, label: eTheme.name, value: eTheme.id };
 });
@@ -30,38 +28,56 @@ export default function Header() {
     if (newLang) i18n.changeLanguage(newLang.id);
   };
 
-  return ( 
-      <div className="  p-1 flex justify-between items-center bg-bg_sidebar_table ">
-        <div className="flex">
+  return (
+    <div className="  p-1 flex justify-between  items-center bg-bg_sidebar_table ">
+      <div className="flex">
         <img src="/imageHeader/KB.png" alt="" className="mb-1  ml-5" />
-        <button className="ml-8 rounded-full bg-gradient-to-tr from-zinc-600 to-zinc-800 px-3 text-text_filter2 text-sm">Tin mới</button>
-        </div>
-        
-          <div className="flex items-center">
-            <div className="border-x px-5 border-border_header h-10 flex items-center justify-center">
-            <img src="./imageHeader/search-normal.png" alt="" className="w-5 h-5  " />
-            </div>
-            <div>
-            <img src="./imageHeader/lock.png" alt="" className="w-5 h-5 ml-5" />
-            </div>
-            <div>
-            <img src="./imageHeader/notification.png" alt="" className="w-5 h-5 ml-5" />
-            </div>
-            <div>
-            <img src="./imageHeader/setting-2.png" alt="" className="w-5 h-5 ml-5" />
-            </div>
-            <div>
-              <img src="./imageHeader/message-question.png" alt="" className="w-5 h-5 mx-5" />
-            </div>
-            
-            <div className="border-l px-5 border-border_header flex items-center text-text_header">
-                <img src="./imageHeader/Avt.png" alt="" className="w-10 h-10 mr-2" />
-                <div>
-                    <h3 className=" text-xs ">Nguyễn Văn A</h3>
-                    <span className="text-xs">091C123456SA</span>
-                </div>
-            </div>
-          </div>     
+        <button className="ml-8 rounded-full bg-gradient-to-tr from-zinc-600 to-zinc-800 px-3 text-text_filter2 text-sm">
+          Tin mới
+        </button>
       </div>
-  );  
+
+      <div className="flex items-center">
+        <div className="border-x px-5 border-border_header h-10 flex items-center justify-center">
+          <img
+            src="./imageHeader/search-normal.png"
+            alt=""
+            className="w-5 h-5  "
+          />
+        </div>
+        <div>
+          <img src="./imageHeader/lock.png" alt="" className="w-5 h-5 ml-5" />
+        </div>
+        <div>
+          <img
+            src="./imageHeader/notification.png"
+            alt=""
+            className="w-5 h-5 ml-5"
+          />
+        </div>
+        <div>
+          <img
+            src="./imageHeader/setting-2.png"
+            alt=""
+            className="w-5 h-5 ml-5"
+          />
+        </div>
+        <div>
+          <img
+            src="./imageHeader/message-question.png"
+            alt=""
+            className="w-5 h-5 mx-5"
+          />
+        </div>
+
+        <div className="border-l px-5 border-border_header flex items-center text-text_header">
+          <img src="./imageHeader/Avt.png" alt="" className="w-10 h-10 mr-2" />
+          <div>
+            <h3 className=" text-xs ">Nguyễn Văn A</h3>
+            <span className="text-xs">091C123456SA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }

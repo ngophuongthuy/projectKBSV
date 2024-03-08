@@ -7,6 +7,7 @@ module.exports = {
       colors: {
         border_header:'#212121',
         text_header:'#5F5F5F',
+        text_header2:'#D8D8D8',
         bg_header_buttom: '#696868',
         text_tab:'#FFFFFF',
         text_filter: '#D8D8D8',
@@ -20,7 +21,6 @@ module.exports = {
         bg_black:'#000000',
         bg_sidebar_table: '#151515',
         bg_table: '#212121',
-        // bg_table2: '#FBAF17',
         text_table_laber: '#D8D8D8',
         border_checkbox: '#5F5F5F',
         text_buttom: '#533700',
@@ -34,10 +34,13 @@ module.exports = {
         otp_input: '#151515' ,
         otp_border: '#939090',
         text_laber:'#939090',
+        text_laber2: '#25B770',
+        text_laber3: '#FF453A',
         text: '#D8D8D8',
         checkbox_otp: '#8C949E',
         text_buttom_otp:'#FFFFFF',
         bg_buttom_acp:'#5F5F5F',
+        text_toast: '#FFFFFF',
       }
     }
   },

@@ -11,7 +11,7 @@ export type TableData = {
     Dahuy: number,
     Trangthai: string,
     Lailo: number,
-    Thoigian: Date,
+    Thoigian: string,
     ThuongDK: string,
     KenhGD: string,
     KL: Number,
