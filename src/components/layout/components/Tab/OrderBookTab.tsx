@@ -1,5 +1,6 @@
 import { useState } from "react";
 import OrderBookLayout from "../OrderBookLayout/OrderBookLayout";
+import PurchasingManagementLayout from "../PurchasingManagement/PurchasingManagementLayout";
 
 export function OrderBookTab() {
   const [activeTabIndex, setActiveTabIndex] = useState(0);
@@ -10,7 +11,7 @@ export function OrderBookTab() {
     },
     {
       label: "Quản lý mua định kỳ",
-      content: "Ngô Phương Thủy haha hihi hoho"
+      content: <PurchasingManagementLayout />
     }
   ];
   return (

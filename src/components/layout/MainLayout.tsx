@@ -10,7 +10,7 @@ function App(): JSX.Element {
 
   return (
     <>
-      <div className="min-h-full bg-bg_black ">
+      <div className=" bg-bg_black ">
         <Header />
         <div className="flex ">
           <Sidebar />

@@ -11,7 +11,7 @@ interface OrderBookTableProps {
 }
 
 export default function OrderBookTable({
-  isChecked,
+  // isChecked,
   onCheckboxChange
 }: OrderBookTableProps) {
   const [tableData, setTableData] = React.useState<Array<TableData>>([]);

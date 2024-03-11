@@ -1,5 +1,4 @@
 import FilterDropdown from "./Dropdown/FilterDropdown";
-import Footer from "../Footer";
 import OrderBookLable from "./TableLayout/Lable/OrderBookLable";
 
 export default function OrderBookLayout() {

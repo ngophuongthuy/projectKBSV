@@ -22,7 +22,7 @@ export default function Sidebar() {
               key={index}
               className="px-3 py-3 flex flex-col items-center hover:text-color_yellow"
             >
-              <img src={item.image} alt="" className="mb-1" />
+              <img src={item.image} alt="" className="mb-3" />
               {item.title}
             </li>
           ))}

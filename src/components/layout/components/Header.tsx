@@ -4,6 +4,7 @@ import { useAppDispatch, useAppSelector } from "@hooks/useStore";
 import { storeCommonChangeTheme } from "@store/slices/commonSlice";
 import { ICommon } from "@types";
 import { useTranslation } from "react-i18next";
+import Marquee from "react-fast-marquee";
 
 const optionsTheme: ICommon.IOption[] = LIST_THEME.map((eTheme) => {
   return { id: eTheme.id, label: eTheme.name, value: eTheme.id };
@@ -30,11 +31,17 @@ export default function Header() {
 
   return (
     <div className="  p-1 flex justify-between  items-center bg-bg_sidebar_table ">
-      <div className="flex">
-        <img src="/imageHeader/KB.png" alt="" className="mb-1  ml-5" />
-        <button className="ml-8 rounded-full bg-gradient-to-tr from-zinc-600 to-zinc-800 px-3 text-text_filter2 text-sm">
-          Tin mới
-        </button>
+      <div className="flex items-center">
+        <img src="/imageHeader/KB.png" alt="" className="mb-1 ml-5" />
+        <div className="ml-8">
+          <button className="rounded-full bg-gradient-to-tr from-zinc-600 to-zinc-800 px-4 text-text_filter2 text-sm">
+            Tin mới
+          </button>
+        </div>
+        <Marquee className="text-white text-xs ml-3">
+          Ưu đãi đậm sâu cùng cơ hội vi vu trời Âu dành cho 02 người và nhiều
+          voucher du lịch hấp dẫn
+        </Marquee>
       </div>
 
       <div className="flex items-center">
