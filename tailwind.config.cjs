@@ -41,6 +41,8 @@ module.exports = {
         text_buttom_otp:'#FFFFFF',
         bg_buttom_acp:'#5F5F5F',
         text_toast: '#FFFFFF',
+        notification: '#FF453A',
+        text_notification: '#FFFFFF',
       }
     }
   },

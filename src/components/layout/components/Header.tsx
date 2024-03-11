@@ -63,13 +63,22 @@ export default function Header() {
                 className="w-5 h-5 ml-5"
               />
             </div>
-            <div>
+            <div className=" ml-2 relative w-6 h-6">
+              <img
+                className="w-full h-full"
+                src="./imageHeader/notification.png"
+              />
+              <div className="text-center text-text_notification absolute bg-notification top-0 right-0 rounded-full w-3 h-3 flex justify-center items-center text-xs">
+                9
+              </div>
+            </div>
+            {/* <div>
               <img
                 src="./imageHeader/notification.png"
                 alt=""
                 className="w-5 h-5 ml-5"
               />
-            </div>
+            </div> */}
             <div>
               <img
                 src="./imageHeader/setting-2.png"
