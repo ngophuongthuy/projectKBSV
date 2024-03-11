@@ -14,8 +14,8 @@ export default function Sidebar() {
   ];
 
   return (
-    <div className="text-center h-screen  ">
-      <aside className="w-20 bg-bg_sidebar_table text-text_footer_sidebar text-xs ">
+    <div className="text-center w-20">
+      <aside className=" bg-bg_sidebar_table text-text_footer_sidebar text-xs ">
         <ul className="py-3">
           {sidebarItems.map((item, index) => (
             <li

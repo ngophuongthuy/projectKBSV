@@ -5,7 +5,7 @@ export default function Dropdown() {
         <div className="flex px-3 py-2 text-sm">
           <div className="text-text_border1">Mã chứng khoán: </div>
           <div className="">
-            <select className="text-text_border2 bg-bg_filter font-talwin border ">
+            <select className="text-text_border2 bg-bg_filter font-talwin  ">
               <option className="">Tất cả</option>
             </select>
           </div>

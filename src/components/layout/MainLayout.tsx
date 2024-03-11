@@ -10,17 +10,17 @@ function App(): JSX.Element {
 
   return (
     <>
-      <div className=" bg-bg_black ">
+      <div className=" bg-bg_black min-h-screen  ">
         <Header />
-        <div className="flex ">
+        <div className="flex  ">
           <Sidebar />
-          <div className="w-screen  ">
-            <div className="">
-              <div className=" m-2 h-[calc(100vh_-_65px)] bg-bg_sidebar_table rounded-md  ">
-                <OrderBookTab />
-              </div>
-              <div className="absolute bottom-3  min-w-full  ">
-                <Footer />
+          <div className="w-screen">
+            <div className=" m-2 h-[calc(100vh_-_70px)] bg-bg_sidebar_table rounded-md  ">
+              <OrderBookTab />
+              <div className="absolute bottom-2 w-full ">
+                <div className="">
+                  <Footer />
+                </div>
               </div>
             </div>
           </div>
