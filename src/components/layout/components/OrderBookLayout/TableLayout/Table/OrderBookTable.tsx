@@ -175,7 +175,7 @@ export default function OrderBookTable({
         theme="light"
         toastClassName=" w-96 mx-auto"
       />
-      <hr className="mt-2 mb-4 border-hr" />
+      <hr className=" mb-4 border-hr" />
     </div>
   );
 }
